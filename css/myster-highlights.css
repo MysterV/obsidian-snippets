@@ -1,0 +1,10 @@
+/* Better Highlights */
+/* made by: Myster */
+/* version: 2025-04-05 */
+/* Makes highlights more visible, adds padding and forces highlight border */
+
+.cm-highlight {
+    border: 0.15em solid !important;
+    border-radius: 4px !important;
+    padding: 0.1em 0.2em 0.1em 0.2em !important;  /* top right bottom left */
+}
