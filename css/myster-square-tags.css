@@ -5,20 +5,21 @@
 /* Inspired by LYT Mode and Prism themes */
 
 body {
-    --tag-border-width: 2px;
-    --tag-padding-x: 0.2em;
-    --tag-padding-y: 0em;
-    --tag-radius: 0.2em;
-    --tag-border-color: var(--color-accent-1);
-    --tag-border-color-hover: var(--color-accent);
-    --tag-color: var(--color-accent-1);
-    --tag-color-hover: var(--color-accent-1);
+    --tag-border-color: var(--color-accent-1) !important;
+    --tag-border-color-hover: var(--color-accent) !important;
+    --tag-color: var(--color-accent-1) !important;
+    --tag-color-hover: hsl(var(--color-accent-1) 50% 50% 100%) !important;
+
+    --tag-border-width: 0.1em !important;
+    --tag-padding-x: 0.2em !important;
+    --tag-padding-y: 0em !important;
+    --tag-radius: 0.2em !important;
 }
 
 .metadata-property .multi-select-pill {
-    border-radius: 0.2em;
+    border-radius: 0.2em !important;
 }
 
 .metadata-property[data-property-key=tags] {
-    --tag-padding-y: 0.15em;
+    --tag-padding-y: 0.15em !important;
 }
