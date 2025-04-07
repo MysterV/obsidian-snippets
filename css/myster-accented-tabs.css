@@ -1,33 +1,17 @@
 /* Accented Tabs */
 /* made by: Myster */
 /* version: 2025-03-15 */
-/* Small accent lines next to tab names */
-/* Sourced from the LYT Mode theme */
-/* Disclaimer: tested that it's incompatible with Prism theme */
+/* Adds small accent lines around active tabs */
+/* Based on the LYT Mode theme */
 
 
 
-
-/* tab bar active tab border */
+/* tab bar */
 .theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active {
     border-top: 2px solid var(--color-accent-1);
 }
 
-/* tab bar active tab title */
-.theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-close-button,
-.theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-icon svg,
-.theme-dark .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-title {
-    color: var(--color-accent-2);
-}
-
-/* stacked tabs active tab border */
+/* stacked tabs */
 .theme-dark .mod-root .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active {
     border-left: 2px solid var(--color-accent-1);
-}
-
-/* stacked tabs active tab title */
-.theme-dark .mod-root .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-close-button,
-.theme-dark .mod-root .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-icon svg,
-.theme-dark .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active .workspace-tab-header-inner-title {
-    color: var(--color-accent-2);
 }
