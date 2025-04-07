@@ -8,10 +8,15 @@
 
 /* tab bar */
 .theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active {
-    border-top: 2px solid var(--color-accent-1);
-}
+    border: 0.15em solid var(--color-accent-1);
+    border-radius: var(--tab-radius);
 
 /* stacked tabs */
 .theme-dark .mod-root .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active {
-    border-left: 2px solid var(--color-accent-1);
+    border: 0.15em solid var(--color-accent-1);
+    border-radius: var(--tab-radius);
+    & .workspace-tab-header-inner {
+        border-radius: var(--tab-radius);
+        border-style: hidden;
+    }
 }
