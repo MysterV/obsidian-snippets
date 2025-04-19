@@ -1,0 +1,12 @@
+/* Dataview Compact Empty Query */
+/* made by: Myster */
+/* version: 2025-04-19 */
+/* Makes the dataview box a one-liner if the query doesn't match anything */
+
+.dataview-error-box {
+    min-height:min-content !important;
+}
+
+.dataview-error-message {
+    margin-block: calc(var(--p-spacing)*0.3) !important;
+}
