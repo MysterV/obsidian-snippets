@@ -1,0 +1,44 @@
+/* Minimal codeblock borders */
+/* made by: Myster */
+/* version: 2025-05-17 */
+/* function: in preview mode, if caret not on a codeblock, makes codeblocks only as big as their contents, by hiding the ``` lines */
+/* comment: Inspired by the (very laggy) "Shiki Highlighter" plugin
+Unintended feature, moving cursor into the codeblock skips the ``` and jumps straight to text */
+
+
+.workspace-leaf:has(.is-live-preview) {
+
+/* when codeblock inactive, hide starting and ending lines */
+div.HyperMD-codeblock-begin.HyperMD-codeblock-begin-bg:not(.cm-active),
+div.HyperMD-codeblock-end.HyperMD-codeblock-end-bg:not(.cm-active) {
+    height: 5px;
+}
+
+/* when codeblock active, show starting backticks */
+div.HyperMD-codeblock-begin.HyperMD-codeblock-begin-bg:has(~ div.HyperMD-codeblock.cm-active),
+div.HyperMD-codeblock-begin.HyperMD-codeblock-begin-bg.cm-active {
+    height: var(--font-text-size)*1.5;
+}
+
+/* when codeblock active, show ending backticks */
+div.HyperMD-codeblock.cm-active ~ div.HyperMD-codeblock-end.HyperMD-codeblock-end-bg,
+div.HyperMD-codeblock-end.HyperMD-codeblock-end-bg.cm-active {
+    height: var(--font-text-size)*1.5;
+}
+
+/* format to both codeblock ends */
+div.HyperMD-codeblock.cm-active ~ div.HyperMD-codeblock-begin.HyperMD-codeblock-begin-bg {
+    height: var(--font-text-size)*1.5;
+}
+div.HyperMD-codeblock-end.HyperMD-codeblock-end-bg:has(~ div.HyperMD-codeblock.cm-active) {
+    height: var(--font-text-size)*1.5;
+}
+
+}
+
+/* TODO: figure out how to stop formatting other codeblocks, and only format currently focused codeblock
+if the active line is .HyperMD-codeblock
+    if there's any sibling between you and active line that isn't .HyperMD-codeblock
+        then don't format
+    else format
+- might only be possible to do with JS */
