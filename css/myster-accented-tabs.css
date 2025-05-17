@@ -1,8 +1,8 @@
 /* Accented Tabs */
-/* made by: Myster */
+/* made by: Myster (https://github.com/MysterV) */
 /* version: 2025-03-15 */
-/* Adds small accent lines around active tabs */
-/* Based on the LYT Mode theme */
+/* function: Adds small accent lines around active tabs */
+/* comment: Based on the LYT Mode theme, dark mode only */
 
 
 
@@ -10,6 +10,7 @@
 .theme-dark .mod-root .workspace-tabs:not(.mod-stacked) .workspace-tab-header.is-active.mod-active {
     border: 0.15em solid var(--color-accent-1);
     border-radius: var(--tab-radius);
+}
 
 /* stacked tabs */
 .theme-dark .mod-root .workspace-tabs.mod-stacked .workspace-tab-header.is-active.mod-active {

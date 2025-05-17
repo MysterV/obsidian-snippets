@@ -1,8 +1,8 @@
 /* Square Tags */
 /* made by: Myster */
 /* version: 2025-03-15 */
-/* Squared tags, added border, use accent color */
-/* Inspired by LYT Mode and Prism themes */
+/* function: tags: squared corners, added border, use accent color */
+/* comment: Inspired by LYT Mode and Prism themes */
 
 body {
     --tag-border-color: var(--color-accent-1) !important;

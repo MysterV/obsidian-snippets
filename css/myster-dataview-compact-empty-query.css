@@ -1,7 +1,7 @@
 /* Dataview Compact Empty Query */
-/* made by: Myster */
+/* made by: Myster (https://github.com/MysterV) */
 /* version: 2025-04-19 */
-/* Makes the dataview box a one-liner if the query doesn't match anything */
+/* function: Makes the dataview box a one-liner if the query doesn't match anything */
 
 .dataview-error-box {
     min-height:min-content !important;
